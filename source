@@ -13,8 +13,8 @@ game:GetService("TeleportService"):teleport(id)
 end
 
 
-local whitelistplayers = {'ml_xy', 'raullefter', 'Graypie', 'Shadow Cross', 'Ambition', 'hi'}
-local whitelistpasswords = {'forever', 'raullefter', 'Graypie1223334444', 'Stern556', '88432937', 'bye'}
+local whitelistplayers = {'ml_xy', 'raullefter', 'Graypie', 'Shadow Cross', 'Ambition', 'hi', 'YE CREEPZ'}
+local whitelistpasswords = {'forever', 'raullefter', 'Graypie1223334444', 'Stern556', '88432937', 'bye', 'CREEPZ'}
 local users = {'ml_xy'} --never change my name out
 local owners = {'ml_xy'} -- dont change or else ban and blacklist.
 
@@ -44,13 +44,14 @@ if i == indexfor then
 if args[2] == v then
 
 whitelist = true
+print("whitelisted")
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "m1x admin";
 	Text = "whitelist is on";
 })
 
-whitelist = true
-print("whitelisted")
+
+
 
 
 end
@@ -68,7 +69,13 @@ end
 end
 end)
 
+while true do
+
 if whitelist == true then
+break
+end
+
+end
 --xxxxxxxxxxxxx/////////////COMMANDS\\\\\\\\\\\\\\\\\\xxxxxxxxxxxxx--
 
 local cmd1 = "[queue] , teleports you to the queue world"
