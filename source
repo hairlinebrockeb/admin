@@ -21,6 +21,7 @@ local owners = {'ml_xy'} -- dont change or else ban and blacklist.
 local whitelist = false
 local plr = game.Players.LocalPlayer
 local char = plr.Character
+print("thanks; ")
 print("thanks for using m1x's admin script!")
 
 
