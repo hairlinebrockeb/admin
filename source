@@ -13,8 +13,8 @@ game:GetService("TeleportService"):teleport(id)
 end
 
 
-local whitelistplayers = {'ml_xy', 'raullefter', 'Graypie'}
-local whitelistpasswords = {'forever', 'raullefter', 'Graypie1223334444'}
+local whitelistplayers = {'ml_xy', 'raullefter', 'Graypie', 'Shadow Cross', 'Ambition', 'hi'}
+local whitelistpasswords = {'forever', 'raullefter', 'Graypie1223334444', 'Stern556', '88432937', 'bye'}
 local users = {'ml_xy'} --never change my name out
 local owners = {'ml_xy'} -- dont change or else ban and blacklist.
 
