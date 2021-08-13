@@ -1,0 +1,681 @@
+--xxxxxxxxxxx////////CONFIG\\\\\\xxxxxxxxxxx-
+
+
+local pre = "["
+
+local version = 3
+
+if version ~= 3 then
+
+local id = game.PlaceId
+game:GetService("TeleportService"):teleport(id)
+
+end
+
+
+local whitelistplayers = {'ml_xy', 'raullefter', 'Graypie'}
+local whitelistpasswords = {'forever', 'raullefter', 'Graypie1223334444'}
+local users = {'ml_xy'} --never change my name out
+local owners = {'ml_xy'} -- dont change or else ban and blacklist.
+
+local whitelist = false
+local plr = game.Players.LocalPlayer
+local char = plr.Character
+print("thanks for using m1x's admin script!")
+
+
+plr.Chatted:Connect(function(msg)
+local args = msg:split(" ")
+if whitelist == false then
+for i,v in pairs(whitelistplayers) do
+
+
+
+
+if args[1] == v then
+local indexfor = i
+
+
+for i,v in pairs(whitelistpasswords) do
+
+if i == indexfor then
+if args[2] == v then
+
+whitelist = true
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "m1x admin";
+	Text = "whitelist is on";
+})
+
+
+
+end
+
+end
+
+
+
+end
+end
+
+
+end
+
+end
+end)
+
+if whitelist == true then
+--xxxxxxxxxxxxx/////////////COMMANDS\\\\\\\\\\\\\\\\\\xxxxxxxxxxxxx--
+
+local cmd1 = "[queue] , teleports you to the queue world"
+local cmd2 = "[space] , teleports you to space"
+local cmd3 = "[zaros] , zaros's world"
+local cmd4 = "[destruction] , OP Moves. (use noslow before)"
+local cmd5 = "[noslow] or [ns] , Allows you to use moves at the same time."
+local cmd6 = "[beerus] , gives you beerus anim"
+local cmd7 = "[rhalo] , removes your halo"
+local cmd8 = "[rwings] , removes your wings"
+local cmd9 = "[hidelvl] , removes your lvl"
+local cmd10 = "[antiqueue] , cant be forced or enter the wormhole to queue world. Only can enter by using a script like game:GetService(TeleportService)"
+local cmd11 = "[frieza] -> teleports you to frieza. if not in namek, it will tp u to namek then frieza."
+local cmd12 = "[captain] -> teleports you to captain ginyu (fully working) if your not in namek it will tp you to namek then tp you to captain ginyu"
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "[cmds]" then
+
+print("commands viewed by mix admin;")
+print(cmd1)
+print(cmd2)
+print(cmd3)
+print(cmd4)
+print(cmd5)
+print(cmd6)
+print(cmd7)
+print(cmd8)
+print(cmd9)
+print(cmd10)
+
+
+end
+
+end)
+
+
+
+plr.Chatted:Connect(function(msg)
+
+if msg == "/ns" then
+    while wait() do
+y = game.Players.LocalPlayer.Character
+for i,v in pairs(y:GetChildren()) do
+if v.Name == "Justice Combination" then
+x = y:WaitForChild("Action")
+if x then wait() x:Destroy() end end
+if v.Name == "Action" then v:Destroy() end
+if v.Name == "Attacking" then v:Destroy() end
+if v.Name == "Using" then v:Destroy() end
+if v.Name == "hyper" then v:Destroy() end
+if v.Name == "Hyper" then v:Destroy() end
+if v.Name == "heavy" then v:Destroy() end
+if v.Name == "KiBlasted" then v:Destroy() end
+if v.Name == "Tele" then v:Destroy() end
+if v.Name == "tele" then v:Destroy() end
+if v.Name == "Killed" then v:Destroy() end
+if v.Name == "Slow" then v:Destroy() end
+if v.Name == "Block" and v.Value == true then
+v.Value = false end end end
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "m1x admin";
+			Text = "noslow is activated";
+		})
+
+
+end
+
+end)
+
+ -- godmode
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/gm" then
+
+    game:GetService("RunService").Stepped:Connect(function()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game.Workspace.Touchy.Part, 0)
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game.Workspace.Touchy.Part, 1)
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("Popup") then
+game.Players.LocalPlayer.PlayerGui.Popup:Remove()
+end end)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "m1x admin";
+			Text = "You now have achieved god mode.";
+		})
+end
+
+end)
+
+
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/antiqueue" then
+
+ game.Workspace["Wormhole"].TouchInterest:Destroy()
+
+game:GetService("StarterGui"):SetCore("SendNotification" , {
+
+Title = "m1x admin",
+Text = "queue teleport is disabled"
+
+})
+
+
+end
+end)
+
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/future"  then
+game:GetService("TeleportService"):Teleport(569994010)
+
+end
+end)
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/secret" then
+
+game:GetService("TeleportService"):Teleport(2046990924)
+end
+end)
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/earth" then
+
+game:GetService("TeleportService"):Teleport(536102540)
+end
+end)
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/namek" then
+
+game:GetService("TeleportService"):Teleport(882399924)
+end
+end)
+
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/zaros" then
+game:GetService("TeleportService"):Teleport(2651456105)
+end
+end)
+
+
+plr.Chatted:Connect(function(msg)
+if msg == "/space" then
+game:GetService("TeleportService"):Teleport(478132461)
+end
+end)
+
+
+
+plr.Chatted:Connect(function(msg)
+
+if msg == "[re]" then
+
+	local args = {
+		[1] = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")
+	}
+
+	game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(unpack(args))
+	-- Script generated by SimpleSpy - credits to exx#9394
+	wait(.3)
+	local args = {
+		[1] = {
+			[1] = "Yes"
+		}
+	}
+
+	game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(unpack(args))
+	wait(.3)
+	-- Script generated by SimpleSpy - credits to exx#9394
+
+	local args = {
+		[1] = "woah"
+	}
+
+	game:GetService("Players").LocalPlayer.Backpack.HairScript.RemoteEvent:FireServer(unpack(args))
+
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+
+Title = "m1x admin";
+Text = "respawning..";
+
+})
+end
+
+
+
+end)
+
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/queue" then
+
+game:GetService("TeleportService"):Teleport(3565304751)
+end
+end)
+
+
+local Player = game.Players.LocalPlayer
+Player.Chatted:connect(function(msg)
+	if msg == "/freeze"then
+	local plr = game:GetService("Players").LocalPlayer
+	local mouse = plr:GetMouse()
+	local place = game.PlaceId
+	Character = game.Players.LocalPlayer
+	Players = game.Players.LocalPlayer.Character
+	MouseFunction = game:GetService("Players").LocalPlayer:GetMouse()
+
+
+	mouse.KeyDown:connect(function(key)
+
+		if key == "l" then
+			Players.Humanoid:EquipTool(Character.Backpack["Dragon Crush"])
+			Players["Dragon Crush"]:Activate()
+			game.Workspace.Live[Character.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+			wait()
+
+		end
+	end)
+	mouse.KeyDown:connect(function(key)
+
+		if key == "k" then
+			local place = game.PlaceId
+			wait(0.5)
+			game:GetService("TeleportService"):Teleport(place)
+		end
+	end)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "m1x admin";
+		Text = "Freeze enabled ; press l to use.";
+	})
+
+	end
+end)
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/frieza" then
+
+
+local npcs = {}
+
+
+
+
+for i,v in pairs(game.Workspace.Live:GetChildren()) do
+
+if v.Name:sub(1,8) == "Frieza L" then
+
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+
+Title = "m1x admin",
+Text = "teleported to frieza"
+})
+
+HI = v
+
+
+TW =  game:GetService("TweenService"):Create(
+                    game.Players.LocalPlayer.Character.HumanoidRootPart,
+                    TweenInfo.new(0.5, Enum.EasingStyle.Linear),
+                    {CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+ 
+               )
+
+TW:Play()
+end
+end
+end
+end)
+
+plr.Chatted:Connect(function(msg)
+
+
+	if msg == "/cell" then
+
+for i,v in pairs(workspace.Live:GetChildren()) do
+if v.Name:sub(1,3) == "Imp" then
+
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+
+Title = "m1x admin",
+Text = "teleported to cell"
+})
+
+HI = v
+
+
+TW =  game:GetService("TweenService"):Create(
+                    game.Players.LocalPlayer.Character.HumanoidRootPart,
+                    TweenInfo.new(0.5, Enum.EasingStyle.Linear),
+                    {CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+ 
+               )
+
+TW:Play()
+end
+end
+end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/higherspawn" then
+
+
+local npcs = {}
+
+
+HI = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")
+TW =  game:GetService("TweenService"):Create(
+                    game.Players.LocalPlayer.Character.HumanoidRootPart,
+                    TweenInfo.new(0.5, Enum.EasingStyle.Linear),
+                    {CFrame = HI.Head.CFrame * CFrame.new(0, 0, 0)}
+ 
+               )
+
+TW:Play()
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+
+Title = "m1x admin",
+Text = "teleported to higher level spawn"
+})
+
+
+
+
+
+
+
+
+end
+end)
+
+
+
+
+
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/captain" then
+
+
+local npcs = {}
+
+
+
+
+for i,v in pairs(game.Workspace.Live:GetChildren()) do
+
+if v.Name:sub(1,3) == "Cap" then
+
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+
+Title = "m1x admin",
+Text = "teleported to ginyu"
+})
+
+HI = v
+
+
+TW =  game:GetService("TweenService"):Create(
+                    game.Players.LocalPlayer.Character.HumanoidRootPart,
+                    TweenInfo.new(0.5, Enum.EasingStyle.Linear),
+                    {CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+ 
+               )
+
+TW:Play()
+end
+end
+end
+end)
+
+
+
+plr.Chatted:Connect(function(msg)
+
+
+if msg == "/beerus" then
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local Animate 
+local Humanoid = player.Character:FindFirstChild('Humanoid')
+mouse.KeyDown:Connect(function(Key) 
+ if Key == "w" then
+  local Animation = Instance.new("Animation", player.Character)
+  Animation.AnimationId = "rbxassetid://1171558651"
+  Animate = Humanoid:LoadAnimation(Animation)
+  Animate:Play()
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+
+
+Title = "m1x admin",
+Text = "beerus animation added to your player."
+
+})
+end
+end)
+end
+end)
+
+
+
+function hidelvl1()
+
+end
+
+Player.Chatted:connect(function(msg)
+	if msg == "/hidelevel" then
+
+ game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model"):Destroy()
+     game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "m1x admin";
+			Text = "hid the level";
+		})
+end
+
+end)
+
+
+
+
+
+
+
+
+
+Player.Chatted:connect(function(msg)
+	if msg == "/toprespawn" then
+
+Die = game.Players.LocalPlayer.Character
+lplr = game:GetService("Players").LocalPlayer
+game:GetService("RunService").RenderStepped:connect(function()
+if Die.Humanoid.Health == 1 then
+game:GetService("Players").LocalPlayer.Character.SuperAction:Destroy()
+wait(0.8)
+game:GetService("TweenService"):Create(lplr.Character.HumanoidRootPart, TweenInfo.new(0.5, Enum.EasingStyle.Linear), {CFrame = CFrame.new(100, 100, 100)}):Play()
+end
+end)
+
+
+
+
+     game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "m1x admin";
+			Text = "hid the level";
+		})
+end
+
+end)
+
+
+
+
+
+
+
+
+function wings()
+
+end
+function hidewingsx()
+
+end
+Player.Chatted:connect(function(msg)
+	if msg == "/rwings" then
+game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "m1x admin";
+			Text = "Wings Removed";
+		})
+
+    while wait() do
+	        pcall(function()
+	            game.Players.LocalPlayer.Character:FindFirstChild('RebirthWings').Handle:Destroy()
+
+	        end)
+    end
+end
+end)
+
+
+plr.Chatted:connect(function(msg)
+	if msg == "/rhalo" then
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "m1x admin";
+			Text = "removing halo";
+		})
+while wait() do
+	        pcall(function()
+	            game.Players.LocalPlayer.Character:FindFirstChild('RealHalo').Handle:Destroy()
+	        end)
+end
+end
+end)
+
+
+
+function bannedppl()
+local banned = {'werexzwolf'}
+
+
+for i,v in pairs(banned) do
+
+
+if v.Name == plr.Name then
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "m1x admin";
+			Text = "Your Blacklisted!, rejoining..";
+		})
+
+
+
+local id = game.PlaceId
+
+  game:GetService("TeleportService"):teleport(id, plr)
+
+end
+   end
+end
+
+
+
+
+bannedppl()
+
+
+function thanks()
+
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+
+Title = "m1x admin";
+Text = "You have used m1x's panel. your use is logged in the system. jk";
+
+})
+
+
+end
+
+
+
+function checkpre()
+
+if pre ~= "[" then
+
+local id = game.PlaceId
+
+  game:GetService("TeleportService"):teleport(id, plr)
+
+end
+end
+
+checkpre()
+end
