@@ -27,6 +27,7 @@ print("thanks for using m1x's admin script!")
 plr.Chatted:Connect(function(msg)
 local args = msg:split(" ")
 if whitelist == false then
+print("not whitelisted")
 for i,v in pairs(whitelistplayers) do
 
 
@@ -48,7 +49,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 })
 
 whitelist = true
-
+print("whitelisted")
 
 
 end
