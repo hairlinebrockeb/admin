@@ -47,6 +47,8 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "whitelist is on";
 })
 
+whitelist = true
+
 
 
 end
