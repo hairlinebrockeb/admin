@@ -21,14 +21,12 @@ local owners = {'ml_xy'} -- dont change or else ban and blacklist.
 local whitelist = false
 local plr = game.Players.LocalPlayer
 local char = plr.Character
-print("thanks; ")
 print("thanks for using m1x's admin script!")
 
 
 plr.Chatted:Connect(function(msg)
 local args = msg:split(" ")
 if whitelist == false then
-print("not whitelisted")
 for i,v in pairs(whitelistplayers) do
 
 
@@ -70,7 +68,7 @@ end
 end)
 
 while true do
-
+wait(.5)
 if whitelist == true then
 break
 end
