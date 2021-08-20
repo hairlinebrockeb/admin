@@ -42,13 +42,10 @@ if i == indexfor then
 if args[2] == v then
 
 whitelist = true
-print("whitelisted")
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "m1x admin";
 	Text = "whitelist is on";
 })
-
-
 
 
 
@@ -67,13 +64,15 @@ end
 end
 end)
 
-while true do
-wait(.5)
+while wait() do
+	
 if whitelist == true then
-break
-end
+
+	break
 
 end
+end
+
 --xxxxxxxxxxxxx/////////////COMMANDS\\\\\\\\\\\\\\\\\\xxxxxxxxxxxxx--
 
 local cmd1 = "[queue] , teleports you to the queue world"
@@ -88,6 +87,7 @@ local cmd9 = "[hidelvl] , removes your lvl"
 local cmd10 = "[antiqueue] , cant be forced or enter the wormhole to queue world. Only can enter by using a script like game:GetService(TeleportService)"
 local cmd11 = "[frieza] -> teleports you to frieza. if not in namek, it will tp u to namek then frieza."
 local cmd12 = "[captain] -> teleports you to captain ginyu (fully working) if your not in namek it will tp you to namek then tp you to captain ginyu"
+local cmd13 = "[cell] -> teleports you to cell (fully working) if your not in namek it will tp you to namek then tp you to captain ginyu"
 plr.Chatted:Connect(function(msg)
 
 
@@ -104,6 +104,9 @@ print(cmd7)
 print(cmd8)
 print(cmd9)
 print(cmd10)
+print(cmd11)
+print(cmd12)
+print(cmd13)
 
 
 end
@@ -115,6 +118,15 @@ end)
 plr.Chatted:Connect(function(msg)
 
 if msg == "/ns" then
+
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "m1x admin";
+		Text = "noslow is activated";
+	})
+
+
+end
+
     while wait() do
 y = game.Players.LocalPlayer.Character
 for i,v in pairs(y:GetChildren()) do
@@ -135,13 +147,7 @@ if v.Name == "Slow" then v:Destroy() end
 if v.Name == "Block" and v.Value == true then
 v.Value = false end end end
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "m1x admin";
-			Text = "noslow is activated";
-		})
 
-
-end
 
 end)
 
@@ -535,9 +541,7 @@ end)
 
 
 
-function hidelvl1()
 
-end
 
 Player.Chatted:connect(function(msg)
 	if msg == "/hidelevel" then
@@ -687,4 +691,3 @@ end
 end
 
 checkpre()
-end
