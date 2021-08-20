@@ -175,6 +175,416 @@ end)
 
 
 
+plr.Chatted:Connect(function(msg)
+
+
+	if msg == "/autobroly" then
+	
+		local name = "Broly" -- broly
+
+		for i,v in pairs(game.Workspace.Live:GetChildren()) do
+
+
+			if v.Name:sub(1,5) == name then
+			
+			if v.Humanoid.Health ~= 0 then
+	
+			
+				 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+							TW =
+								game:GetService("TweenService"):Create(
+								game.Players.LocalPlayer.Character.HumanoidRootPart,
+								TweenInfo.new(0.5, Enum.EasingStyle.Linear),
+								{CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+							)
+			
+			
+			
+			TW:Play()
+			wait(0.6)
+			local positioning = char.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+			TW =
+								game:GetService("TweenService"):Create(
+								game.Players.LocalPlayer.Character.HumanoidRootPart,
+								TweenInfo.new(0.5, Enum.EasingStyle.Linear),
+								{CFrame = positioning}
+							)
+			
+			TW:Play()
+			print("using crush")
+			local throw = lplr.Backpack["Dragon Throw"]
+			TW:Play()
+			char.Humanoid:EquipTool(lplr.Backpack["Dragon Crush"])
+			TW:Play()
+			char["Dragon Crush"]:Activate()
+			TW:Play()
+			TW:Play()
+			TW:Play()
+			TW:Play()
+			 local plr = game.Players.LocalPlayer
+					game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+			TW:Play()
+					game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Throw"]:Destroy()
+			TW:Play()
+					game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Blocked"]:Destroy()
+			TW:Play()
+					game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["HitDown"]:Destroy()
+			TW:Play()
+					game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["BoneBreak"]:Destroy()
+			throw.Parent = lplr.Backpack
+			TW:Play()
+			TW:Play()
+			wait(1)
+			
+			
+			
+			   print("dragon throw works")
+			
+			
+			repeat
+			
+			if _G.enableform == false then
+			if char.Ki.Value <500 then
+			
+			game.Players.LocalPlayer.Backpack.ServerTraits.Transform:FireServer("g")
+			
+			end
+			end
+			game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("true")
+			
+			
+			
+			
+			TW:Play()
+				wait()
+			TW:Play()
+			TW:Play()
+			
+			
+			
+			
+
+			
+			TW:Play()
+			   TW:Play()
+			
+			wait()
+			local plr = game.Players.LocalPlayer
+			TW:Play()
+			
+			TW:Play()
+			for i,v in pairs(lplr.Backpack:GetChildren()) do
+			if workspace.Live["Broly BR"].Stats["Phys-Damage"].Value == 2679 then
+			game.Players.LocalPlayer.Backpack.ServerTraits.Transform:FireServer("g")
+			end
+			game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("true")
+			
+			
+			if
+				v.Name == Move1 or 
+				v.Name == Move2 or
+				v.Name == Move3 or
+				v.Name == Move4 or
+			 v.Name == Move5 or
+			 v.Name == Move6 or
+			 v.Name == Move7 or
+			 v.Name == Move8 or
+			 v.Name == Move9
+			
+			then
+			game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("true")
+			TW:Play()
+					v.Parent = game.Workspace.Live[plr.Name]
+					TW:Play()
+				v:Activate()
+			wait(0.1)
+			   v:Deactivate()
+			TW:Play()
+			v.Parent = game.Players.LocalPlayer.Backpack
+			
+					
+				end
+			end
+			
+			TW:Play()
+			
+			if _G.enableform == false then
+			if char.Ki.Value <500 then
+			
+			game.Players.LocalPlayer.Backpack.ServerTraits.Transform:FireServer("g")
+			
+			end
+			end
+			
+			
+			if _G.lowKiPunch == true then
+			game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer(
+																{[1] = "m2"},
+																CFrame.new(0, 0, 0),
+																nil,
+																false
+															)
+			
+			end
+			TW:Play()
+			
+			
+			if v.Humanoid.Health == 0 then
+			
+			game:GetService("TeleportService"):teleport( 3565304751)
+			
+			end
+			
+				until v.Humanoid.Health == 0 or char.Humanoid.Health == 0
+			
+			
+			
+			wait(.9)
+			
+			
+			
+			
+			end
+			
+			
+			end
+			
+			end
+			
+	end
+	
+	end)
+
+
+
+
+plr.Chatted:Connect(function(msg)
+
+
+	if msg == "/autotop" then
+	
+		Move1 = "Trash???"
+		Move2 = "Meteor Crash"
+		Move3 = "Anger Rush"
+		Move4 = "Wolf Fang Fist"
+		Move5 = "Neo Wolf Fang Fist"
+		Move6 = "Deadly Dance"
+		Move7 = "TS Molotov"
+		Move8 = "Flash Skewer"
+		Move9 = "Sweep Kick"
+		Move10 = "Demon Flash"
+		print("player")
+		
+		_G.TweenSpeed = 0.1 --[Change to the speed you want to teleport to enemies.]
+		
+		local lplr = game.Players.LocalPlayer
+		local plr = game.Players.LocalPlayer
+		
+		
+		
+		local char = plr.Character
+		 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/hairlinebrockeb/nototheslow/main/notheslow'))()
+		
+		
+		local realPlayer = game.Players:GetChildren()
+		
+		local playerfound = {}
+		print("checking..")
+		
+		Die = game.Players.LocalPlayer.Character
+		lplr = game:GetService("Players").LocalPlayer
+		game:GetService("RunService").RenderStepped:connect(function()
+		if Die.Humanoid.Health == 1 then
+		game:GetService("Players").LocalPlayer.Character.SuperAction:Destroy()
+		wait(0.8)
+		game:GetService("TweenService"):Create(lplr.Character.HumanoidRootPart, TweenInfo.new(0.5, Enum.EasingStyle.Linear), {CFrame = CFrame.new(100, 100, 100)}):Play()
+		end
+		end)
+		
+		
+		lplr.PlayerGui.HUD.Bottom.SP.Text = "AutoTop Made by m1x#0866"
+		lplr.PlayerGui.HUD.Bottom.SP.Visible = true
+		
+		local resetting = false
+		
+		
+		for i,v in pairs(game.Workspace.Live:GetChildren()) do
+			
+		
+			if game.Players:FindFirstChild(v.Name) then
+				
+				print("player")
+				else
+				
+				
+		 print("Npc")
+			local HI = game.Workspace.Live[v.Name]
+		
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+					   TW =
+						   game:GetService("TweenService"):Create(
+						   game.Players.LocalPlayer.Character.HumanoidRootPart,
+						   TweenInfo.new(_G.TweenSpeed, Enum.EasingStyle.Linear),
+						   {CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+					   )
+		
+					   TW:Play()
+					   TW:Play()
+					   TW:Play()
+					  
+		
+		
+		
+					   TW =
+					   game:GetService("TweenService"):Create(
+					   game.Players.LocalPlayer.Character.HumanoidRootPart,
+					   TweenInfo.new(_G.TweenSpeed, Enum.EasingStyle.Linear),
+					   {CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+				   )
+		
+				   
+		
+		
+		if v:FindFirstChild("Humanoid") then
+			TW:Play()
+			repeat
+				game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("true")
+				TW =
+				game:GetService("TweenService"):Create(
+				game.Players.LocalPlayer.Character.HumanoidRootPart,
+				TweenInfo.new(_G.TweenSpeed, Enum.EasingStyle.Linear),
+				{CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+			)
+				TW:Play()
+				if char.Ki.Value <100 then
+					TW:Play()
+					if resetting == false then
+						TW:Play()
+						resetting = true
+					game.ReplicatedStorage.ResetChar:FireServer(false)
+					TW:Play()
+					wait(6)
+					resetting = false
+					TW:Play()
+					end
+				end
+													   
+				for i,v in pairs(plr.Backpack:GetChildren()) do
+					game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("true")
+					TW =
+					game:GetService("TweenService"):Create(
+					game.Players.LocalPlayer.Character.HumanoidRootPart,
+					TweenInfo.new(_G.TweenSpeed, Enum.EasingStyle.Linear),
+					{CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+				)
+					TW:Play()
+					if
+					v.Name == Move1 or v.Name == Move2 or v.Name == Move3 or v.Name == Move4 or v.Name == Move5 or v.Name == Move6 or v.Name == Move7 or v.Name == Move8 or v.Name == Move9 or v.Name == Move10
+				then
+				 
+		
+											TW:Play()
+											TW =
+											game:GetService("TweenService"):Create(
+											game.Players.LocalPlayer.Character.HumanoidRootPart,
+											TweenInfo.new(_G.TweenSpeed, Enum.EasingStyle.Linear),
+											{CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+										)
+										TW:Play()
+										TW:Play()
+										
+										v.Parent = game.Workspace.Live[plr.Name]                                
+		v:Activate()
+		wait(.1)
+		v:Deactivate()
+		v.Parent = game.Players.LocalPlayer.Backpack
+		end
+		end
+				game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer(
+															{[1] = "m2"},
+															CFrame.new(0, 0, 0),
+															nil,
+															false
+														)
+		
+													   
+				for i,v in pairs(plr.Backpack:GetChildren()) do
+					game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("true")
+					TW =
+					game:GetService("TweenService"):Create(
+					game.Players.LocalPlayer.Character.HumanoidRootPart,
+					TweenInfo.new(_G.TweenSpeed, Enum.EasingStyle.Linear),
+					{CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+				)
+					TW:Play()
+					if
+					v.Name == Move1 or v.Name == Move2 or v.Name == Move3 or v.Name == Move4 or v.Name == Move5 or v.Name == Move6 or v.Name == Move7 or v.Name == Move8 or v.Name == Move9 or v.Name == Move10
+				then
+				 
+		
+											TW:Play()
+											TW =
+											game:GetService("TweenService"):Create(
+											game.Players.LocalPlayer.Character.HumanoidRootPart,
+											TweenInfo.new(_G.TweenSpeed, Enum.EasingStyle.Linear),
+											{CFrame = HI.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0)}
+										)
+										TW:Play()
+										TW:Play()
+										
+										v.Parent = game.Workspace.Live[plr.Name]                                
+		v:Activate()
+		wait(.1)
+		v:Deactivate()
+		v.Parent = game.Players.LocalPlayer.Backpack
+									end
+								end
+		TW:Play()
+		if char.Ki.Value <100 then
+			if resetting == false then
+				TW:Play()
+				resetting = true
+			game.ReplicatedStorage.ResetChar:FireServer(false)
+			TW:Play()
+			wait(6)
+			resetting = false
+			TW:Play()
+			end
+		end
+		game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("true")
+					TW:Play()
+					TW:Play()
+				
+		
+				if char.Ki.Value <100 then
+					if resetting == false then
+						TW:Play()
+						resetting = true
+					game.ReplicatedStorage.ResetChar:FireServer(false)
+					TW:Play()
+					wait(6)
+					resetting = false
+					TW:Play()
+					end
+				end
+				TW:Play()
+			until v.Humanoid.Health == 0 
+		
+		   
+		end
+		end
+		end
+
+
+
+	end
+	
+	end)
+
+
+
+
+
 
 plr.Chatted:Connect(function(msg)
 
