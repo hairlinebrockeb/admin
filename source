@@ -4,7 +4,7 @@
 local pre = "["
 
 local version = 3
-_G.TweenSpeed = 1
+
 local name = "Broly" -- broly
 if version ~= 3 then
 
@@ -13,16 +13,6 @@ game:GetService("TeleportService"):teleport(id)
 
 end
 
-Move1 = "Trash???"
-Move2 = "Meteor Crash"
-Move3 = "Anger Rush"
-Move4 = "Wolf Fang Fist"
-Move5 = "Neo Wolf Fang Fist"
-Move6 = "Deadly Dance"
-Move7 = "TS Molotov"
-Move8 = "Flash Skewer"
-Move9 = "Sweep Kick"
-Move10 = "Demon Flash"
 
 
 local whitelistplayers = {'ml_xy', 'raullefter', 'Graypie', 'Shadow Cross', 'Ambition', 'hi', 'YE CREEPZ','vcapz'}
@@ -919,7 +909,13 @@ plr.Chatted:Connect(function(msg)
 
 
 if msg == "/beerus" then
+	game:GetService("StarterGui"):SetCore("SendNotification", {
 
+
+		Title = "m1x admin",
+		Text = "beerus animation added to your player."
+		
+		})
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 local Animate 
@@ -931,18 +927,43 @@ mouse.KeyDown:Connect(function(Key)
   Animate = Humanoid:LoadAnimation(Animation)
   Animate:Play()
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
 
-
-Title = "m1x admin",
-Text = "beerus animation added to your player."
-
-})
 end
 end)
 end
 end)
 
+plr.Chatted:Connect(function(msg)
+
+
+	if msg == "/autocross" then
+	
+	
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+	
+	
+			Title = "m1x admin",
+			Text = "cross animation added to your player."
+			
+			})
+
+
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local Animate 
+	local Humanoid = player.Character:FindFirstChild('Humanoid')
+	mouse.KeyDown:Connect(function(Key) 
+	 if Key == "w" then
+	  local Animation = Instance.new("Animation", player.Character)
+	  Animation.AnimationId = "rbxassetid://835140847"
+	  Animate = Humanoid:LoadAnimation(Animation)
+	  Animate:Play()
+
+	end
+	end)
+	end
+	end)
+	
 
 
 
