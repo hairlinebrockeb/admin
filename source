@@ -17,7 +17,7 @@ end
 
 local whitelistplayers = {'ml_xy', 'raullefter', 'Graypie', 'Shadow Cross', 'Ambition', 'hi', 'YE CREEPZ','vcapz'}
 local whitelistpasswords = {'forever', 'raullefter', 'Graypie1223334444', 'Stern556', '88432937', 'bye', 'CREEPZ','imwet'}
-local users = {'ml_xy','anmolbrian','ExiledAwoke'} --never change my name out
+local users = {'ml_xy','anmolbrian','ExiledAwoke','YousafT1223','plusultraxgokualt'} --never change my name out
 local owners = {'ml_xy'} -- dont change or else ban and blacklist.
 
 
