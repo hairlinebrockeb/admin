@@ -82,7 +82,7 @@ end
 
 end
 
-while wait() do
+while wait(.3) do
 	
 if whitelist == true then
 
