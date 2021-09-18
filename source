@@ -3,10 +3,10 @@
 
 local pre = "["
 
-local version = 3
+local version = 4
 
 local name = "Broly" -- broly
-if version ~= 3 then
+if version ~= 4 then
 
 local id = game.PlaceId
 game:GetService("TeleportService"):teleport(id)
@@ -106,6 +106,10 @@ local cmd10 = "[antiqueue] , cant be forced or enter the wormhole to queue world
 local cmd11 = "[frieza] -> teleports you to frieza. if not in namek, it will tp u to namek then frieza."
 local cmd12 = "[captain] -> teleports you to captain ginyu (fully working) if your not in namek it will tp you to namek then tp you to captain ginyu"
 local cmd13 = "[cell] -> teleports you to cell (fully working) if your not in namek it will tp you to namek then tp you to captain ginyu"
+local cmd14 = "[autobroly] -> must use /ns before use"
+local cmd15 = "[autotop] -> kill kefla first. you can spam ur own red beans and sometimes u might have to reset if ur not doing moves."
+local cmd16 = "[gm] -> gives u godmode."
+local cmd17 = "subscribe to m1xverballist on yt -> for more scripts."
 plr.Chatted:Connect(function(msg)
 
 
@@ -125,8 +129,10 @@ print(cmd10)
 print(cmd11)
 print(cmd12)
 print(cmd13)
-
-
+print(cmd14)
+print(cmd15)
+print(cmd16)
+print(cmd17)
 end
 
 end)
@@ -141,10 +147,6 @@ if msg == "/ns" then
 		Title = "m1x admin";
 		Text = "noslow is activated";
 	})
-
-
-end
-
     while wait() do
 y = game.Players.LocalPlayer.Character
 for i,v in pairs(y:GetChildren()) do
@@ -164,6 +166,10 @@ if v.Name == "Killed" then v:Destroy() end
 if v.Name == "Slow" then v:Destroy() end
 if v.Name == "Block" and v.Value == true then
 v.Value = false end end end
+
+
+end
+
 
 
 
